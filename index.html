@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Lodhi | SEO &amp; AI Automation</title>
+<meta name="description" content="Ali Lodhi – SEO specialist and AI automation builder. Try the live AI CV Analyzer or hire me to build your own automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#home">ALI LODHI<i>.</i></a>
+  <nav>
+    <a href="#how">Automation</a>
+    <a href="#analyze">Live demo</a>
+    <a href="#contact" class="nav-cta">Hire me</a>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-main">
+      <p class="eyebrow">SEO &amp; AI Automation</p>
+      <h1 aria-label="Ali Lodhi, SEO and AI Automation">
+        <span class="line"><span>Ali Lodhi</span></span>
+        <span class="line"><span class="blue">SEO &amp; AI</span></span>
+        <span class="line"><span>Automation.</span></span>
+      </h1>
+    </div>
+    <div class="hero-side">
+      <p>I rank businesses on Google and build AI tools that remove repetitive work. This CV Analyzer is a live example: upload a CV and get an AI score in seconds.</p>
+      <a class="btn" href="#analyze">Try the CV Analyzer</a>
+      <div class="stats">
+        <div><b id="st-total">0</b><span>CVs analyzed</span></div>
+        <div><b id="st-avg">–</b><span>Average score</span></div>
+        <div><b id="st-best">–</b><span>Best score</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee band-a" aria-hidden="true"><div class="track">
+    <span>Local SEO ✦ Google Maps SEO ✦ Technical SEO ✦ AI Automation ✦ Gemini AI ✦ Custom Workflows ✦ </span>
+    <span>Local SEO ✦ Google Maps SEO ✦ Technical SEO ✦ AI Automation ✦ Gemini AI ✦ Custom Workflows ✦ </span>
+  </div></div>
+  <div class="marquee band-b" aria-hidden="true"><div class="track rev">
+    <span>Ali Lodhi SEO ✦ AI Automation ✦ Ali Lodhi SEO ✦ AI Automation ✦ </span>
+    <span>Ali Lodhi SEO ✦ AI Automation ✦ Ali Lodhi SEO ✦ AI Automation ✦ </span>
+  </div></div>
+
+  <section id="how" class="how reveal">
+    <h2>How this automation works</h2>
+    <ol>
+      <li><h3>Upload</h3><p>PDF, TXT or pasted text up to 4 MB.</p></li>
+      <li><h3>Extract</h3><p>A serverless function reads and cleans the text.</p></li>
+      <li><h3>Analyze</h3><p>Gemini scores the CV and compares it with the job.</p></li>
+      <li><h3>Store</h3><p>The result is saved in a MySQL database.</p></li>
+    </ol>
+  </section>
+
+  <section id="analyze" class="analyze reveal">
+    <h2>Live demo: AI CV Analyzer</h2>
+    <form id="form">
+      <div class="col">
+        <label class="drop" id="drop">
+          <input type="file" id="cv" accept=".pdf,.txt">
+          <strong id="drop-title">Choose a PDF or TXT file</strong>
+          <span id="drop-sub">or drag it here</span>
+        </label>
+        <label>Or paste CV text
+          <textarea id="cv_text" rows="6" placeholder="Paste the full CV here"></textarea>
+        </label>
+      </div>
+      <div class="col">
+        <label>Job title
+          <input type="text" id="job_title" placeholder="e.g. Senior SEO Specialist">
+        </label>
+        <label>Job description <small>(optional, enables match score)</small>
+          <textarea id="job_description" rows="8" placeholder="Paste the job description"></textarea>
+        </label>
+        <button class="btn" id="submit" type="submit">Analyze CV</button>
+        <p id="error" class="error" role="alert" hidden></p>
+      </div>
+    </form>
+    <div id="loading" class="loading" hidden><span class="spin"></span> Gemini is reading the CV…</div>
+    <div id="result" class="result" hidden></div>
+  </section>
+
+  <section id="history" class="history reveal">
+    <h2>Saved analyses <small>(admin only)</small></h2>
+    <form id="admin-form" class="admin">
+      <input type="password" id="admin-key" placeholder="Admin password" autocomplete="current-password" aria-label="Admin password">
+      <button class="btn small" type="submit">Unlock</button>
+      <span id="admin-msg" class="muted"></span>
+    </form>
+    <div class="table-wrap" id="table-wrap" hidden>
+      <table>
+        <thead><tr><th>Candidate</th><th>Job</th><th>Score</th><th>Match</th><th>Date</th><th></th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact" class="contact reveal">
+    <p class="eyebrow">Next project</p>
+    <h2>Want a custom automation built for your business?</h2>
+    <p class="lead">CV screening, lead capture, WhatsApp replies, report generation, Google Maps SEO workflows. Tell me what takes your team hours and I will automate it.</p>
+    <div class="contact-row">
+      <a class="btn big" href="mailto:alilodhiseo@gmail.com?subject=Automation%20project%20enquiry">alilodhiseo@gmail.com</a>
+      <button class="btn ghost" id="copy-mail" type="button">Copy email</button>
+      <a class="btn ghost" href="https://instagram.com/alilodhiseo" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="marquee foot" aria-hidden="true"><div class="track">
+    <span>ALI LODHI SEO ✦ ALI LODHI SEO ✦ </span><span>ALI LODHI SEO ✦ ALI LODHI SEO ✦ </span>
+  </div></div>
+  <p>© <span id="yr"></span> Ali Lodhi · SEO &amp; AI Automation · <a href="mailto:alilodhiseo@gmail.com">alilodhiseo@gmail.com</a></p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
